@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
-import type { RootStackParamList } from "../../App";
+import type { RootStackParamList } from "../../router";
 import {
   StyleSheet,
   Text,
@@ -96,7 +96,7 @@ export default function LoginScreen({navigation}:Props) {
               >
                 <Text style={styles.btnTitle}>SIGN IN</Text>
               </TouchableOpacity>
-              <TouchableOpacity onPress={()=>navigation.navigate('Register')} style={{marginTop:20}}>
+              <TouchableOpacity onPress={()=>navigation.navigate('Register')} style={{marginTop:20, alignSelf:"center"}}>
                 <Text style={{fontSize:20, color:"#fff"}} >To Register</Text>
               </TouchableOpacity>
             </View>
