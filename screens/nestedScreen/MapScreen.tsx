@@ -6,7 +6,7 @@ import {
   View,  
 } from "react-native";
 
-export default function ProfileScreen() {
+export default function MapScreen() {
     return (
       <View style={styles.container}>
         <Text>ProfileScreen</Text>
